@@ -1,0 +1,22 @@
+Enable A to D subsystem
+Enable serial subsystem
+Configure as Master
+
+Loop
+	Read the analog signal on Port E0
+
+	Wait for result
+
+	Calculate voltage
+		Multiply result by 5
+		Divide by 255
+
+	Print result in Hex and caculated voltage to screen
+	
+	Calculate the number of bars to display
+		Divide result by 25
+	
+	Send serial device the number of bars it should display
+	
+	Delay to disply to user
+End Loop

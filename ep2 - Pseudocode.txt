@@ -1,0 +1,8 @@
+Enable serial subsystem
+Configure as Master
+Start at 10 bars
+Loop
+	Poll for pushbutton press
+	Send serial device the number of bars it should display
+	Decriment counter
+End Loop
